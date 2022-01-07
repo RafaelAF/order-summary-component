@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.card-container{
+    height: 100vh;
+    display: flex;
+    background-color: hsl(225, 100%, 86%);
+    background-image: url(/images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 350px;
+    height: 550px;
+    
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.bg-card{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 100%;
+    
+}
+.content-card{
+    background-color: hsl(225, 100%, 98%);
+    width: 100%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.content-card .parag{
+    font-size: 16px;
+    padding: 10px 20px 20px 20px;
+    color: rgb(128, 128, 128);
+}
+.content-card h1{
+    font-weight: 900;
+}
+
+
+.content-card h1,.content-card p{
+    text-align: center;
+}
+.card-plans{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card--plan{
+    display: flex;
+}
+.card--plan img{
+    margin-right: 10px;
+}
+.card--plan p:first-child{
+    font-weight: 700;
+}
+.card--plan p:last-child{
+    color: rgb(128, 128, 128);
+}
+.btn-change{
+    text-decoration: underline;
+    font-weight:700;
+    color: hsl(245, 75%, 52%);
+}
+.btn-pay{
+    background-color: hsl(245, 75%, 52%);
+    color: #fff;
+    padding: 12px;
+    font-size: 14px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    box-shadow: 0 18px 10px hsl(225, 100%, 94%);
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.btn-cancel{
+    color: rgb(104, 104, 104);
+    font-weight: 700;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+@media (max-width: 375px) {
+    .card{
+        width: 300px;
+    }
+}
+@media (max-width: 320px) {
+    .card{
+        width: 280px;
+    }
+}
